@@ -4,8 +4,8 @@ import { useAuth } from '../context/AuthContext';
 
 export function LoginPage() {
   const { login } = useAuth();
-  const [email, setEmail] = useState('etudiant@ecocharge.local');
-  const [password, setPassword] = useState('EcoCharge2026!');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -68,7 +68,8 @@ export function LoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="nom@ecocharge.local"
+                placeholder="Entrez votre email..."
+                autoComplete="username"
                 className="w-full pl-10 pr-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-eco-primary focus:border-transparent text-sm text-gray-900 transition-shadow"
               />
             </div>
@@ -85,7 +86,8 @@ export function LoginPage() {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••••••"
+                placeholder="Entrez votre mot de passe..."
+                autoComplete="current-password"
                 className="w-full pl-10 pr-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-eco-primary focus:border-transparent text-sm text-gray-900 transition-shadow"
               />
             </div>
