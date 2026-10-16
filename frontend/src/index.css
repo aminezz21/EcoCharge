@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F4F7F5;
+    color: #123D32;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Animations et micro-interactions sobres */
+.eco-card {
+  @apply bg-white rounded-xl border border-eco-border shadow-sm transition-all duration-200 hover:shadow-md;
+}
+
+.eco-badge {
+  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+}
+
+.eco-btn-primary {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-eco-primary hover:bg-[#1a6e4b] text-white font-medium rounded-lg transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-eco-primary focus:ring-offset-2;
+}
+
+.eco-btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-eco-light/50 text-eco-dark border border-eco-border font-medium rounded-lg transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-eco-primary focus:ring-offset-2;
+}

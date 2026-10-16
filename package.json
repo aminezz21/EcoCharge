@@ -1,0 +1,22 @@
+{
+  "name": "ecocharge-root",
+  "version": "1.0.0",
+  "description": "Système IoT de supervision & valorisation énergétique des déchets organiques",
+  "scripts": {
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "iot",
+    "esp32",
+    "biodigester",
+    "biogas",
+    "energy",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "Étudiant L3 IoT & Systèmes Embarqués",
+  "license": "MIT"
+}
