@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Système IoT de supervision & valorisation énergétique des déchets organiques",
   "scripts": {
+    "build": "npm run build:frontend",
     "start:backend": "cd backend && node server.js",
     "start:frontend": "cd frontend && npm run dev",
     "build:frontend": "cd frontend && npm run build"
