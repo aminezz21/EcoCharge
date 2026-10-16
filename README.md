@@ -23,11 +23,15 @@ Visualisation séquentielle en 5 étapes de la méthanisation anaérobie mésoph
 ### Qu'est-ce qu'EcoCharge ?
 **EcoCharge** est une plateforme industrielle et académique dédiée au monitoring temps réel de la valorisation énergétique des biodéchets. Elle permet de suivre précisément chaque étape de la transformation de matières organiques en vecteur énergétique :
 
-$$\text{Biodéchets (kg)} \xrightarrow{\text{Tri \& Pesée}} \text{Biodigesteur Mésophile (35-38°C)} \xrightarrow{\text{Méthanisation}} \text{Biogaz (CH}_4\text{)} \xrightarrow{\text{Génératrice (Rendement ~32\%)}} \text{Électricité (kWh)}$$
+```text
+[ Biodéchets (kg) ] ──(Tri & Pesée)──▶ [ Biodigesteur Mésophile (35-38°C) ] ──(Méthanisation)──▶ [ Biogaz (CH₄) ] ──(Génératrice ~32%)──▶ [ Électricité (kWh) ]
+```
 
 En parallèle, l'infrastructure IoT assure une acquisition continue et non-intrusive :
 
-$$\text{Banc de Capteurs} \xrightarrow{\text{Bus OneWire / ADC / I2C}} \text{ESP32 (Wi-Fi 802.11)} \xrightarrow{\text{HTTP REST / JSON}} \text{API Node.js/Express} \xrightarrow{\text{Persistance}} \text{SQLite} \xrightarrow{\text{Polling 5s}} \text{Dashboard React 19}$$
+```text
+[ Banc de Capteurs ] ──(OneWire / ADC / I2C)──▶ [ ESP32 (Wi-Fi 802.11) ] ──(HTTP REST / JSON)──▶ [ API Express ] ──▶ [ Base SQLite ] ──(Polling 5s)──▶ [ Dashboard React 19 ]
+```
 
 ---
 
